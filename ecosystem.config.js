@@ -30,7 +30,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:ChabeLimousines/speedtest.git',
       path : '/home/chabe/applications/speedtest',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : '/etc/profile.d/nvm.sh && npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
 };
